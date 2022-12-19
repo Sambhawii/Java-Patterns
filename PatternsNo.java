@@ -286,3 +286,37 @@ class PatternaNo14 {
 
     }
 }
+
+
+        // 1 1
+        // 2 2
+        // 3 3
+        // 4 4
+        // 5
+        // 4 4
+        // 3 3
+        // 2 2
+        // 1 1
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= 2 * n; j++) {
+                if (i == j || i + j == 2 * n + 1) {
+                    System.out.print(i);
+
+                } else
+                    System.out.print(" ");
+
+            }
+            System.out.println();
+        }
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = 1; j <= 2 * n; j++) {
+                if (i == j || i + j == 2 * n + 1) {
+                    System.out.print(i);
+
+                } else
+                    System.out.print(" ");
+
+            }
+            System.out.println();
+        }
+        System.out.println()
